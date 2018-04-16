@@ -39,13 +39,22 @@ public class LoveActivity extends AppCompatActivity {
         String first_p = fPartner.getText().toString().trim();
         String second_p = sPartner.getText().toString().trim();
 
-        int first_num = getNumber(first_p);
-        int second_num = getNumber(second_p);
+        if(first_p.isEmpty() || second_p.isEmpty()){
+            Toast.makeText(LoveActivity.this,"Please enter both names first",Toast.LENGTH_LONG).show();
+        }
+        else if( first_p.equalsIgnoreCase(second_p) || second_p.equalsIgnoreCase(first_p)){
+            Toast.makeText(LoveActivity.this,"Please enter different names for both fields",Toast.LENGTH_LONG).show();
+        }
+        else
+        {
+            int first_num = getNumber(first_p);
+            int second_num = getNumber(second_p);
 
-        //gets the average of the count of the number of characters in each string entered
-        int avg_of_num = ((first_num + second_num)/2) % 100;
+            //gets the average of the count of the number of characters in each string entered
+            int avg_of_num = ((first_num + second_num) / 2) % 100;
 
-        Toast.makeText(this," YoUr LOve is :\t " + avg_of_num + "%",Toast.LENGTH_LONG).show();
+            Toast.makeText(this, " YoUr LOve is :\t " + avg_of_num + "%", Toast.LENGTH_LONG).show();
+        }
 
     }
 
