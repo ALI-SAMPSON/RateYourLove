@@ -34,14 +34,17 @@ public class LoveActivity extends AppCompatActivity {
 
     }
 
+    //Method for handling OnClickListener
     public void onCheckLoveRate(View view){
         //gets input from the user through the Editfield
         String first_p = fPartner.getText().toString().trim();
         String second_p = sPartner.getText().toString().trim();
 
+        //check to see if the fields are not empty
         if(first_p.isEmpty() || second_p.isEmpty()){
             Toast.makeText(LoveActivity.this,"Please enter both names first",Toast.LENGTH_LONG).show();
         }
+        //checks to see if the value of the first person's name is not equal to the name of the second person's name
         else if( first_p.equalsIgnoreCase(second_p) || second_p.equalsIgnoreCase(first_p)){
             Toast.makeText(LoveActivity.this,"Please enter different names for both fields",Toast.LENGTH_LONG).show();
         }
