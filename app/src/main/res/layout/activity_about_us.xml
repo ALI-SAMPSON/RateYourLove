@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.icode.rateyourlove.AboutUsActivity">
+
+    <!--View group for Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorWhite"
+        android:id="@+id/toolbar">
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/about_us"
+            android:layout_marginTop="80dp"
+            android:typeface="serif"
+            android:padding="30dp"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:textColor="@color/colorBlack"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

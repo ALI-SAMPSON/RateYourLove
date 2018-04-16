@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Rate Your Love</string>
+    <string name="hint_first_partner">Your Name</string>
+    <string name="hint_second_partner">Partner Name</string>
+    <string name="check_love">CHECK LOVE RATE</string>
+    <string name="about_us">"YoUr LoVe RaTe" is an
+        application developed by iCODE Studios.
+        This is aimed at helping the youth engaged
+        in relationships to have fun just by checking
+        the percentage at which their partners love them.
+        However, this is does not guarantee the correctness of the percentage
+        of love shown by a partner.
+        Have fun with the application.
+        !!!...Wow...!!!
+        Contact Details:
+        Email : alisampson2@gmail.com
+        Tel: +233245134112
+
+        </string>
+</resources>
+
